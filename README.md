@@ -4,4 +4,4 @@ Just having some fun helping to teach my wife to code. Working with examples at 
 
 ## 2015
 
-1. [Not Quite Lisp](2015/01-1/README.md)
+1. Not Quite Lisp - [Part 1](2015/01-1/README.md), [Part 2](2015/01-2/README.md)
