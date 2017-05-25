@@ -15,7 +15,7 @@ All numbers in the elves' list are in feet. How many total square feet of wrappi
 
     $ node part1.js
 
-## Part Two
+### Part Two
 
 The elves are also running low on ribbon. Ribbon is all the same width, so they only have to worry about the length they need to order, which they would again like to be exact.
 
@@ -28,6 +28,6 @@ For example:
 
 How many total feet of ribbon should they order?
 
-## Running the Solution
+### Running the Solution
 
     $ node part2.js
