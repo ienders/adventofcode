@@ -4,7 +4,7 @@ let visitedHouses = {}
 let housesGifted = 0
 
 const visit = (position) => {
-  const key = `${position[0]}@${position[1]}`
+  const key = position.join(',')
   if (!visitedHouses[key]) {
     housesGifted += 1
     visitedHouses[key] = true
