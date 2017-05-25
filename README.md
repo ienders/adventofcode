@@ -9,3 +9,4 @@ Just having some fun helping to teach my wife to code. Working with examples at 
 1. [Day 1: Not Quite Lisp](2015/01)
 2. [Day 2: I Was Told There Would Be No Math](2015/02)
 3. [Day 3: Perfectly Spherical Houses in a Vacuum](2015/03)
+4. [Day 4: The Ideal Stocking Stuffer](2015/04)
