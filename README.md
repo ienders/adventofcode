@@ -13,3 +13,4 @@ Just having some fun helping to teach my wife to code. Working with examples at 
 5. [Doesn't He Have Intern-Elves For This?](2015/05)
 6. [Probably a Fire Hazard](2015/06)
 7. [Some Assembly Required](2015/07)
+8. [Matchsticks](2015/08)
