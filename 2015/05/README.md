@@ -18,10 +18,6 @@ For example:
 
 How many strings are nice?
 
-### Running the Solution
-
-    $ node part1.js
-
 ## Part Two
 
 Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or nice. None of the old rules apply, as they are all clearly ridiculous.
@@ -42,4 +38,4 @@ How many strings are nice under these new rules?
 
 ### Running the Solution
 
-    $ node part2.js
+    $ node solution.js

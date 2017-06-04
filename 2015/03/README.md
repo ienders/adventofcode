@@ -12,10 +12,6 @@ For example:
 -  ^>v< delivers presents to 4 houses in a square, including twice to the house at his starting/ending location.
 - ^v^v^v^v^v delivers a bunch of presents to some very lucky children at only 2 houses.
 
-### Running the Solution
-
-    $ node part1.js
-
 ## Part Two
 
 The next year, to speed up the process, Santa creates a robot version of himself, Robo-Santa, to deliver presents with him.
@@ -32,4 +28,4 @@ For example:
 
 ### Running the Solution
 
-    $ node part2.js
+    $ node solution.js

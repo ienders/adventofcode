@@ -16,10 +16,6 @@ For example:
 
 After following the instructions, how many lights are lit?
 
-### Running the Solution
-
-    $ node part1.js
-
 ## Part 2
 
 You just finish implementing your winning light pattern when you realize you mistranslated Santa's message from Ancient Nordic Elvish.
@@ -41,4 +37,4 @@ For example:
 
 ### Running the Solution
 
-    $ node part2.js
+    $ node solution.js
