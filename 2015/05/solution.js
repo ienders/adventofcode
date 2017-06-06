@@ -1,4 +1,4 @@
-const HAS_AT_LEAST_THREE_VOWELS = 
+const HAS_AT_LEAST_THREE_VOWELS = /([aeiou].*){3}/
 const HAS_CONSECUTIVE_CHARACTERS = /(.)\1+/
 const HAS_BAD_THINGS = /(ab)|(cd)|(pq)|(xy)/
 const HAS_REPEATING_PAIRS = /(..).*\1/
