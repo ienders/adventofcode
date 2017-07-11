@@ -38,3 +38,7 @@ causing the whole score to multiply to zero.
 
 Given the ingredients in your kitchen and their properties, what is the total score of
 the highest-scoring cookie you can make?
+
+### Running the Solution
+
+    $ node solution.js
