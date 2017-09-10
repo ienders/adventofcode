@@ -22,53 +22,41 @@ const calibrate = (replacers, molecule) => {
   return Object.keys(molecules).length
 }
 
-let deadends = {}
+/*
+  Due to a special nature of the inputs -- there exist components that only exist
+  at the RIGHT end of a larger molecule string -- we should reduce with our rightmost matches first.
+  For example, in my input: "Ar" only exists at the right end of each replacer (ie: H => CRnMgYFAr).
+  This is significantly faster than just matching the first option.
+  Combining this with a depth-first greedy replacement (longest reductions first), we arrive
+  at a solution quickly.
 
-const solutions = (replacers, molecule, level) => {
-  if (deadends[molecule]) {
-    // console.log(deadends)
-    return []
-  }
-  const possibleSteps = []
-  replacers.forEach((replacer) => {
-    const [ replacement, match ] = replacer
-    replacements(match, replacement, molecule).forEach((str) => {
-      possibleSteps.push([ `${match} => ${replacement}`, str ])
-    })
-  })
-  if (possibleSteps.length === 0) {
-    deadends[molecule] = true
-    return []
-  }
-  const sols = []
-  let steps = possibleSteps.length
-  for (let i = 0; i < steps; i++) {
-    const step = possibleSteps[i]
-    if (level < 170) {
-      console.log(`level ${level}: ${i} of ${steps}`)
-    }
-    if (step[1] === 'e') {
-      sols.push(step[0])
-    } else {
-      const subsols = solutions(replacers, step[1], level + 1)
-      if (subsols.length === 0) {
-        deadends[step[1]] = true
-        // console.log(deadends)
-        continue
+  NOTE: there is only one actual solution length, so arriving at any solution
+  is fine. You'll get the right answer regardless.
+*/
+const findSolution = (replacers, molecule, path = []) => {
+  for (let i = 0; i < replacers.length; i++) {
+    const [ replacement, match ] = replacers[i]
+    const reductions = replacements(match, replacement, molecule)
+    if (reductions.length > 0) {
+      const reducedMolecule = reductions[reductions.length - 1]
+      const operation = `${match} => ${replacement}`
+      const currentPath = path.concat(operation)
+      if (reducedMolecule === 'e') {
+        return currentPath
+      } else {
+        const solution = findSolution(replacers, reducedMolecule, currentPath)
+        if (solution) {
+          return solution
+        }
       }
-      subsols.forEach((solution) => {
-        sols.push([ step[0] ].concat(solution))
-      })
     }
   }
-  return sols
+  return false
 }
 
 const solve = (replacers, molecule) => {
-  const sols = solutions(replacers, molecule, 1)
-  console.log('deadended main molecule', deadends[molecule])
-  console.log(sols)
-  return sols.length
+  replacers.sort((a, b) => b[1].length - a[1].length)
+  return findSolution(replacers, molecule).length
 }
 
 const report = (replacers, molecule) => {

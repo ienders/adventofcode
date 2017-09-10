@@ -75,3 +75,7 @@ HOHOHO, can be made in 6 steps.
 How long will it take to make the medicine? Given the available replacements
 and the medicine molecule in your puzzle input, what is the fewest number of
 steps to go from e to the medicine molecule?
+
+### Running the Solution
+
+    $ node solution.js
