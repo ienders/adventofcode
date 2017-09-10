@@ -24,3 +24,4 @@ Just having some fun helping to teach my wife to code. Working with examples at 
 16. [Aunt Sue](2015/16)
 17. [No Such Thing as Too Much](2015/17)
 18. [Like a GIF For Your Yard](2015/18)
+19. [Medicine for Rudolph](2015/19)
