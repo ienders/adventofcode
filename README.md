@@ -25,3 +25,4 @@ Just having some fun helping to teach my wife to code. Working with examples at 
 17. [No Such Thing as Too Much](2015/17)
 18. [Like a GIF For Your Yard](2015/18)
 19. [Medicine for Rudolph](2015/19)
+20. [Infinite Elves and Infinite Houses](2015/20)
