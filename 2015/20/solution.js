@@ -58,11 +58,18 @@ const exponentToHCN = (exponentStr) => {
 }
 
 const presentsForHouse = (houseNum, giftsPerVisit, maximum) => {
+  const increment = (i, total) => {
+    if (maximum && (houseNum / i) > maximum) {
+      return total
+    }
+    return total + i * giftsPerVisit
+  }
   let total = 0
-  for (let i = 1; i <= houseNum; i++) {
+  for (let i = 1; i <= Math.sqrt(houseNum); i++) {
     if (houseNum % i === 0) {
-      if (!maximum || (houseNum / i) <= maximum) {
-        total += i * giftsPerVisit
+      total = increment(i, total)
+      if ((houseNum / i) !== i) {
+        total = increment(houseNum / i, total)
       }
     }
   }
@@ -70,6 +77,7 @@ const presentsForHouse = (houseNum, giftsPerVisit, maximum) => {
 }
 
 const solve = (target, giftsPerVisit, maximum) => {
+  // Good enough. This covers up to HCN Order 38.
   const hcns = highlyCompositeNumbersUpToPrimeFactor(12)
   for (let i = 0; i < hcns.length; i++) {
     if (presentsForHouse(hcns[i], giftsPerVisit, maximum) >= target) {
