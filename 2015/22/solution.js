@@ -85,9 +85,9 @@ const minSolution = (state, hard, memo = { currentBest: Infinity }) => {
     return state
   }
   return frontier(state, hard).
-    map((next) => minSolution(next, hard, memo)).
-    filter((sol) => sol).
-    sort((a, b) => a.wizard.manaSpent - b.wizard.manaSpent)[0]
+      map((next) => minSolution(next, hard, memo)).
+      filter((sol) => sol).
+      sort((a, b) => a.wizard.manaSpent - b.wizard.manaSpent)[0]
 }
 
 const wizard = () => ({ hp: 50, mana: 500, manaSpent: 0, armor: 0 })
