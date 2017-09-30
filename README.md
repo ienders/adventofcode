@@ -27,3 +27,4 @@ Just having some fun helping to teach my wife to code. Working with examples at 
 19. [Medicine for Rudolph](2015/19)
 20. [Infinite Elves and Infinite Houses](2015/20)
 21. [RPG Simulator 20XX](2015/21)
+22. [Wizard Simulator 20XX](2015/22)
