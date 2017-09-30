@@ -17,7 +17,7 @@ const cleanArg = (arg) => {
 }
 
 const defineComputer = (line) => {
-  let [ instr, arg1, arg2 ] = line.split(/,? /)
+  const [ instr, arg1, arg2 ] = line.split(/,? /)
   computer.push(instructions[instr](cleanArg(arg1), cleanArg(arg2)))
 }
 
