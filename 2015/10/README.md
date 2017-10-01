@@ -27,6 +27,10 @@ Neat, right? You might also enjoy hearing John Conway talking about this sequenc
 Now, starting again with the digits in your puzzle input, apply this process 50 times.
 What is the length of the new result?
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb

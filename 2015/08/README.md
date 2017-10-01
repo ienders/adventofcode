@@ -53,6 +53,10 @@ in the original code representation (23, just like in the first part of this puz
 is 42 - 23 = 19.
 </pre>
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb
