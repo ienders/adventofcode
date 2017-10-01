@@ -36,6 +36,10 @@ For example:
 
 How many strings are nice under these new rules?
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb

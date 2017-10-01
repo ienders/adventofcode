@@ -32,6 +32,10 @@ For example:
 - ()()) causes him to enter the basement at character position 5.
 - What is the position of the character that causes Santa to first enter the basement?
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb

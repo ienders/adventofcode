@@ -13,7 +13,11 @@ For example:
 
 Now find one that starts with six zeroes.
 
-### Running the Solution
+### Running the Solution in JS
 
     $ npm install
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb
