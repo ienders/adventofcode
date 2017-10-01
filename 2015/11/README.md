@@ -37,6 +37,10 @@ Given Santa's current password (your puzzle input), what should his next passwor
 
 Santa's password expired again. What's the next one?
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb
