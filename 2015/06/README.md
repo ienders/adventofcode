@@ -35,6 +35,10 @@ For example:
 - turn on 0,0 through 0,0 would increase the total brightness by 1.
 - toggle 0,0 through 999,999 would increase the total brightness by 2000000.
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb

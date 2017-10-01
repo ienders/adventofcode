@@ -2,7 +2,7 @@
 
 From [Advent of Code](http://adventofcode.com).
 
-Just having some fun helping to teach my wife to code. Working with examples at the same time so we have something to compare and discuss.
+Just having some fun helping to teach some folks how to code and think through problems. Working with examples at the same time so we have something to compare and discuss.
 
 ## 2015
 
