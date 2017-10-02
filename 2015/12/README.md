@@ -29,6 +29,10 @@ Ignore any object (and all of its children) which has any property with the valu
 - <code>{"d":"red","e":[1,2,3,4],"f":5} now has a sum of 0, because the entire structure is ignored.</code>
 - <code>[1,"red",5] has a sum of 6, because "red" in an array has no effect.</code>
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb

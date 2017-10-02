@@ -57,6 +57,10 @@ So, add yourself to the list, and give all happiness relationships that involve 
 
 What is the total change in happiness for the optimal seating arrangement that actually includes yourself?
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb

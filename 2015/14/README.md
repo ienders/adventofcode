@@ -43,6 +43,10 @@ champion, only has 312. So, with the new scoring system, Dancer would win (if th
 Again given the descriptions of each reindeer (in your puzzle input), after exactly
 2503 seconds, how many points does the winning reindeer have?
 
-### Running the Solution
+### Running the Solution in JS
 
     $ node solution.js
+
+### Running the Solution in Ruby
+
+    $ ruby solution.rb
