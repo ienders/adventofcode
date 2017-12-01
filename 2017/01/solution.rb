@@ -9,7 +9,7 @@ def solution(vals, distance = 1)
   sum
 end
 
-input = File.read('input.txt').split('').map(&:to_i)
+input = File.read('input.txt').chars.map(&:to_i)
 
-puts solution(input)
-puts solution(input, input.length / 2)
+puts 'Part 1', solution(input)
+puts 'Part 2', solution(input, input.length / 2)
