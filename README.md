@@ -31,3 +31,12 @@ Just having some fun helping to teach some folks how to code and think through p
 23. [Opening the Turing Lock](2015/23)
 24. [It Hangs in the Balance](2015/24)
 25. [Let It Snow](2015/25)
+
+## 2016
+
+1. [No Time for a Taxicab](2016/01)
+2. [Bathroom Security](2016/02)
+
+## 2017
+
+1. [Inverse Captcha](2017/01)
