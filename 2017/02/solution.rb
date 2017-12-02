@@ -31,5 +31,4 @@ File.read('input.txt').each_line do |line|
 end
 
 puts 'Part 1', diff(table)
-
 puts 'Part 2', divide(table)

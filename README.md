@@ -40,3 +40,4 @@ Just having some fun helping to teach some folks how to code and think through p
 ## 2017
 
 1. [Inverse Captcha](2017/01)
+2. [Corruption Checksum](2017/02)
