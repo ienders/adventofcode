@@ -37,6 +37,7 @@ Just having some fun helping to teach some folks how to code and think through p
 1. [No Time for a Taxicab](2016/01)
 2. [Bathroom Security](2016/02)
 3. [Squares With Three Sides](2016/03)
+4. [Security Through Obscurity](2016/04)
 
 ## 2017
 
