@@ -1,5 +1,9 @@
 <?php
 
+function parseRow($row) {
+  return array_map('intval', preg_split('/\s+/', trim($row)));  
+}
+
 function transform($rows) {
   $triangles = [];
   $transposed = array_map(null, ...$rows);
@@ -8,7 +12,6 @@ function transform($rows) {
       array_push($triangles, [ $row[$i], $row[$i + 1], $row[$i + 2] ]);
     }
   }
-  var_dump($triangles);
   return $triangles;
 }
 
@@ -21,15 +24,7 @@ function countValid($triangles) {
   return $valid;
 }
 
-$filename = 'input.txt';
-
-$handle = fopen($filename, 'r');
-$rows = explode("\n", fread($handle, filesize($filename)));
-fclose($handle);
-
-for ($i = 0; $i < count($rows); $i++) {
-  $rows[$i] = array_map('intval', preg_split('/\s+/', trim($rows[$i])));
-}
+$rows = array_map('parseRow', explode("\n", file_get_contents('input.txt')));
 
 echo 'Part 1 ', countValid($rows), "\n";
 echo 'Part 2 ', countValid(transform($rows)), "\n";
