@@ -48,3 +48,4 @@ Just having some fun helping to teach some folks how to code and think through p
 2. [Corruption Checksum](2017/02)
 3. [Spiral Memory](2017/03)
 4. [High-Entropy Passphrases](2017/04)
+5. [A Maze of Twisty Trampolines, All Alike](2017/05)
