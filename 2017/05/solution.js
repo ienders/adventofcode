@@ -10,14 +10,11 @@ const readAndIncrement = (offsets, i, incrementor) => {
 
 const numSteps = (input, incrementor) => {
   const offsets = input.slice()
-  let steps = 0
-  let pos = 0
+  let steps = 0, pos = 0
   while (true) {
     steps += 1
     pos += readAndIncrement(offsets, pos, incrementor)
-    if (typeof offsets[pos] == 'undefined') {
-      return steps
-    }
+    if (typeof offsets[pos] === 'undefined') return steps
   }
 }
 
