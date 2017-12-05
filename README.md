@@ -39,6 +39,8 @@ Just having some fun helping to teach some folks how to code and think through p
 3. [Squares With Three Sides](2016/03)
 4. [Security Through Obscurity](2016/04)
 5. [How About a Nice Game of Chess?](2016/05)
+6. [Signals and Noise](2016/06)
+7. [Internet Protocol Version 7](2016/07)
 
 ## 2017
 

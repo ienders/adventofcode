@@ -33,3 +33,7 @@ For example, if the Door ID is abc:
 You almost choke on your popcorn as the final character falls into place, producing the password 05ace8e3.
 
 Given the actual Door ID and this new method, what is the password? Be extra proud of your solution if it uses a cinematic "decrypting" animation.
+
+### Running the Solution
+
+    $ php solution.php
