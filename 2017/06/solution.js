@@ -11,35 +11,22 @@ const cycle = state => {
   return next
 }
 
-const snapshot = state => state.join(',')
-
-const firstRepeat = initialState => {
+const solve = initialState => {
   const snapshots = {}
   let cycles = 0
   let state = initialState
   while (true) {
     cycles += 1
     state = cycle(state)
-    const key = snapshot(state)
-    if (snapshots[key]) return [ cycles, state ]
-    snapshots[key] = true
-  }
-}
-
-const cycleToTarget = (initialState, target) => {
-  const targetSnapshot = snapshot(target)
-  let cycles = 0
-  let state = initialState
-  while (true) {
-    cycles += 1
-    state = cycle(state)
-    if (snapshot(state) == targetSnapshot) return cycles
+    const key = state.join(',')
+    const found = snapshots[key]
+    if (found) return [ cycles, cycles - found ]
+    snapshots[key] = cycles
   }
 }
 
 const input = require('fs').readFileSync('input.txt', 'utf8').split(/\s+/).map(Number)
 
-const repeated = firstRepeat(input)
-
-console.log('Part 1', repeated[0])
-console.log('Part 2', cycleToTarget(repeated[1], repeated[1]))
+const solution = solve(input)
+console.log('Part 1', solution[0])
+console.log('Part 2', solution[1])
