@@ -49,3 +49,4 @@ Just having some fun helping to teach some folks how to code and think through p
 3. [Spiral Memory](2017/03)
 4. [High-Entropy Passphrases](2017/04)
 5. [A Maze of Twisty Trampolines, All Alike](2017/05)
+6. [Memory Reallocation](2017/06)
