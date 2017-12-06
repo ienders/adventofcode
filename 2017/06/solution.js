@@ -11,9 +11,9 @@ const cycle = state => {
   return next
 }
 
-const snapshot = (state) => state.join(',')
+const snapshot = state => state.join(',')
 
-const firstRepeat = (initialState) => {
+const firstRepeat = initialState => {
   const snapshots = {}
   let cycles = 0
   let state = initialState
