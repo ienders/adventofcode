@@ -43,6 +43,7 @@ Just having some fun helping to teach some folks how to code and think through p
 7. [Internet Protocol Version 7](2016/07)
 8. [Two-Factor Authentication](2016/08)
 9. [Explosives in Cyberspace](2016/09)
+10. [Balance Bots](2016/10)
 
 ## 2017
 
