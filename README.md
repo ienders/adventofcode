@@ -41,6 +41,8 @@ Just having some fun helping to teach some folks how to code and think through p
 5. [How About a Nice Game of Chess?](2016/05)
 6. [Signals and Noise](2016/06)
 7. [Internet Protocol Version 7](2016/07)
+8. [Two-Factor Authentication](2016/08)
+9. [Explosives in Cyberspace](2016/09)
 
 ## 2017
 
