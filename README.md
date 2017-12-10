@@ -46,6 +46,7 @@ Just having some fun helping to teach some folks how to code and think through p
 10. [Balance Bots](2016/10)
 11. [Radioisotope Thermoelectric Generators](2016/11)
 12. [Leonardo's Monorail](2016/12)
+13. [A Maze of Twisty Little Cubicles](2016/13)
 
 ## 2017
 
