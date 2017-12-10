@@ -57,3 +57,4 @@ Just having some fun helping to teach some folks how to code and think through p
 7. [Recursive Circus](2017/07)
 8. [I Heard You Like Registers](2017/08)
 9. [Stream Processing](2017/09)
+10. [Knot Hash](2017/10)
