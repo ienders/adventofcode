@@ -44,6 +44,7 @@ Just having some fun helping to teach some folks how to code and think through p
 8. [Two-Factor Authentication](2016/08)
 9. [Explosives in Cyberspace](2016/09)
 10. [Balance Bots](2016/10)
+11. [Radioisotope Thermoelectric Generators](2016/11)
 
 ## 2017
 
