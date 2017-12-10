@@ -46,4 +46,4 @@ end
 
 lengths += [ 17, 31, 73, 47, 23 ]
 
-puts "Part 2: #{hexify(reduce(rotate(lengths, 64)))}
+puts "Part 2: #{hexify(reduce(rotate(lengths, 64)))}"
