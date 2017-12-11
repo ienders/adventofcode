@@ -51,6 +51,7 @@ Just having some fun helping to teach some folks how to code and think through p
 15. [Timing is Everything](2016/15)
 16. [Dragon Checksum](2016/16)
 17. [Two Steps Forward](2016/17)
+18. [Like a Rogue](2016/18)
 
 ## 2017
 
