@@ -1,5 +1,6 @@
 <?php
 
+define('DOOR_DIRS', [ 'U', 'D', 'L', 'R' ]);
 define('UNLOCKABLE_CHARS', [ 'b', 'c', 'd', 'e', 'f' ]);
 
 class State {
@@ -43,11 +44,10 @@ class State {
 
   public function validDirections($passcode) {
     $door_keys = str_split(substr(md5($passcode.$this->directions), 0, 4));
-    $doors = [ 'U', 'D', 'L', 'R' ];
     $valid = [];
     for ($i = 0; $i < 4; $i++) {
       if (in_array($door_keys[$i], UNLOCKABLE_CHARS)) {
-        array_push($valid, $doors[$i]);
+        array_push($valid, DOOR_DIRS[$i]);
       }
     }
     return $valid;
