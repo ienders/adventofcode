@@ -48,6 +48,7 @@ Just having some fun helping to teach some folks how to code and think through p
 12. [Leonardo's Monorail](2016/12)
 13. [A Maze of Twisty Little Cubicles](2016/13)
 14. [One-Time Pad](2016/14)
+15. [Timing is Everything](2016/15)
 
 ## 2017
 
