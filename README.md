@@ -54,6 +54,7 @@ Just having some fun helping to teach some folks how to code and think through p
 18. [Like a Rogue](2016/18)
 19. [An Elephant Named Joseph](2016/19)
 20. [Firewall Rules](2016/20)
+21. [Scrambled Letters and Hash](2016/21)
 
 ## 2017
 
