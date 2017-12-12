@@ -57,6 +57,8 @@ Just having some fun helping to teach some folks how to code and think through p
 21. [Scrambled Letters and Hash](2016/21)
 22. [Grid Computing](2016/22)
 23. [Safe Cracking](2016/23)
+24. [Air Duct Spelunking](2016/24)
+25. [Clock Signal](2016/25)
 
 ## 2017
 
@@ -71,3 +73,4 @@ Just having some fun helping to teach some folks how to code and think through p
 9. [Stream Processing](2017/09)
 10. [Knot Hash](2017/10)
 11. [Hex Ed](2017/11)
+12. [Digital Plumber](2017/12)
