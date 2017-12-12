@@ -32,6 +32,6 @@ function run($instructions, $registers) {
 
 $instructions = explode("\n", file_get_contents('input.txt'));
 echo 'Part 1 ', run($instructions, array('a' => 0, 'b' => 0, 'c' => 0, 'd' => 0)), "\n";
-echo 'Part 1 ', run($instructions, array('a' => 0, 'b' => 0, 'c' => 1, 'd' => 0)), "\n";
+echo 'Part 2 ', run($instructions, array('a' => 0, 'b' => 0, 'c' => 1, 'd' => 0)), "\n";
 
 ?>
