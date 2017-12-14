@@ -70,6 +70,7 @@ Initial state:
 [ ] [ ]         [ ]     [ ]
 [ ]             [ ]     [ ]
                 [ ]     [ ]
+</pre>
 
 <pre>
 Picosecond 0:
