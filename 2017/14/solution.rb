@@ -74,7 +74,7 @@ end
 def count_regions(grid)
   grid = grid.dup
   regions = 0
-  while (sum(grid) > 0)
+  while sum(grid) > 0 do
     regions += 1
     x, y = find_non_zero(grid)
     grid[x][y] = 0
