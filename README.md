@@ -76,3 +76,4 @@ Just having some fun helping to teach some folks how to code and think through p
 12. [Digital Plumber](2017/12)
 13. [Packet Scanners](2017/13)
 14. [Disk Defragmentation](2017/14)
+15. [Dueling Generators](2017/15)
