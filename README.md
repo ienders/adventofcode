@@ -80,3 +80,5 @@ Just having some fun helping to teach some folks how to code and think through p
 16. [Permutation Promenade](2017/16)
 17. [Spinlock](2017/17)
 18. [Duet](2017/18)
+19. [A Series of Tubes](2017/19)
+
