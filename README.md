@@ -74,3 +74,12 @@ Just having some fun helping to teach some folks how to code and think through p
 10. [Knot Hash](2017/10)
 11. [Hex Ed](2017/11)
 12. [Digital Plumber](2017/12)
+13. [Packet Scanners](2017/13)
+14. [Disk Defragmentation](2017/14)
+15. [Dueling Generators](2017/15)
+16. [Permutation Promenade](2017/16)
+17. [Spinlock](2017/17)
+18. [Duet](2017/18)
+19. [A Series of Tubes](2017/19)
+20. [Particle Swarm](2017/20)
+
