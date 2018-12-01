@@ -82,4 +82,4 @@ Just having some fun helping to teach some folks how to code and think through p
 18. [Duet](2017/18)
 19. [A Series of Tubes](2017/19)
 20. [Particle Swarm](2017/20)
-
+21. [Fractal Art](2017/21)
