@@ -76,7 +76,7 @@ Here are other examples:
 What is the first frequency your device reaches twice?
 
  */
-class Day1Solution: Solution {
+class Day1Solution : Solution {
 
     private val values: List<Int> = inputLines("inputs/day1.txt").map(String::toInt)
 

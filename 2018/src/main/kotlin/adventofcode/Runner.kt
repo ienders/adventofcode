@@ -1,7 +1,9 @@
 package adventofcode
 
 val solutions = listOf(
-    Day1Solution::class
+    Day1Solution::class,
+    Day2Solution::class,
+    Day3Solution::class
 )
 
 fun main(args : Array<String>) {
