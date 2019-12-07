@@ -1,6 +1,5 @@
 package adventofcode
 
-import adventofcode.util.inputLinesAsInts
 import java.lang.Integer.max
 
 /**
@@ -56,9 +55,9 @@ account the mass of the added fuel? (Calculate the fuel requirements for each mo
 add them all up at the end.)
 
  */
-class Day1Solution : Solution {
+class Day1Solution : Solution(1) {
 
-    private val values: List<Int> = inputLinesAsInts("inputs/day1.txt")
+    private val values: List<Int> = inputLinesAsInts
 
     private fun fuel(mass: Int): Int = max(0, mass / 3 - 2)
 

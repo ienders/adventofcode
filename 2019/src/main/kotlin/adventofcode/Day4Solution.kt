@@ -1,10 +1,8 @@
 package adventofcode
 
-import adventofcode.util.inputAsString
+class Day4Solution : Solution(4) {
 
-class Day4Solution : Solution {
-
-    private val input = inputAsString("inputs/day4.txt").split("-")
+    private val input = inputAsString.split("-")
     private val min: Int = input[0].toInt()
     private val max: Int = input[1].toInt()
 
@@ -30,8 +28,7 @@ class Day4Solution : Solution {
         return count.toString()
     }
 
-    override fun part1(): String = count(repeatingRegex)
-
-    override fun part2(): String = count(exactly2Regex)
+    override fun part1() = count(repeatingRegex)
+    override fun part2() = count(exactly2Regex)
 
 }

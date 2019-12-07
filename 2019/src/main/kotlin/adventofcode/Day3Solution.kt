@@ -1,12 +1,11 @@
 package adventofcode
 
-import adventofcode.util.inputLines
 import java.lang.Integer.min
 import kotlin.math.abs
 
-class Day3Solution : Solution {
+class Day3Solution : Solution(3) {
 
-    private val input = inputLines("inputs/day3.txt")
+    private val input = inputLines
 
     private val wireAPath: List<String> = input[0].split(",")
     private val wireBPath: List<String> = input[1].split(",")
@@ -53,8 +52,7 @@ class Day3Solution : Solution {
         runWire(wireBPath, "B")
     }
 
-    override fun part1(): String = minDistance.toString()
-
-    override fun part2(): String = minIntersectionDistance.toString()
+    override fun part1() = minDistance.toString()
+    override fun part2() = minIntersectionDistance.toString()
 
 }

@@ -1,8 +1,5 @@
 package adventofcode
 
-import adventofcode.util.inputLines
-import java.lang.IllegalStateException
-
 /*
 --- Day 2: 1202 Program Alarm ---
 On the way to your gravity assist around the Moon, your ship computer beeps angrily about a "1202 program alarm".
@@ -112,49 +109,21 @@ Find the input noun and verb that cause the program to produce the output 196907
 What is 100 * noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
 
  */
-class Day2Solution : Solution {
+class Day2Solution : Solution(2) {
 
-    private val program: MutableList<Int>
-        get() = inputLines("inputs/day2.txt")
-            .first().split(",")
-            .map(String::toInt)
-            .toMutableList()
-
-    private fun reset(input: MutableList<Int>, noun: Int, verb: Int) {
-        input[1] = noun
-        input[2] = verb
-    }
-
-    private fun step(input: MutableList<Int>, pos: Int): Boolean {
-        when (input[pos]) {
-            1 -> input[input[pos + 3]] = input[input[pos + 1]] + input[input[pos + 2]]
-            2 -> input[input[pos + 3]] = input[input[pos + 1]] * input[input[pos + 2]]
-            99 -> return false
-        }
-        return true
-    }
-
-    private fun run(input: MutableList<Int>) {
-        var pos = 0
-        while (step(input, pos)) {
-            pos += 4
-        }
-    }
-
-    private fun execute(noun: Int, verb: Int): Int =
-        program.let {
-            reset(it, noun, verb)
-            run(it)
-            it[0]
-        }
+    private fun computer(noun: Int, verb: Int): IntcodeComputer =
+        IntcodeComputer(intcodeInput.also {
+            it[1] = noun
+            it[2] = verb
+        })
 
     override fun part1(): String =
-        execute(12, 2).toString()
+        computer(12, 2).execute().toString()
 
     override fun part2(): String {
         for (noun in 0..99) {
             for (verb in 0..99) {
-                if (execute(noun, verb) == 19690720) {
+                if (computer(noun, verb).execute() == 19690720) {
                     return (100 * noun + verb).toString()
                 }
             }
