@@ -8,3 +8,6 @@ fun Solution.inputLines(filename: String) =
 
 fun Solution.inputLinesAsInts(filename: String) =
     inputLines(filename).map(String::toInt)
+
+fun Solution.inputAsString(filename: String) =
+    inputLines(filename).first()
