@@ -6,7 +6,8 @@ val solutions = listOf(
     Day3Solution::class,
     Day4Solution::class,
     Day5Solution::class,
-    Day6Solution::class
+    Day6Solution::class,
+    Day7Solution::class
 )
 
 fun main(args : Array<String>) {

@@ -118,12 +118,17 @@ class Day2Solution : Solution(2) {
         })
 
     override fun part1(): String =
-        computer(12, 2).execute().toString()
+        computer(12, 2).let {
+            it.execute()
+            it.memory()[0]
+        }.toString()
 
     override fun part2(): String {
         for (noun in 0..99) {
             for (verb in 0..99) {
-                if (computer(noun, verb).execute() == 19690720) {
+                val computer = computer(noun, verb)
+                computer.execute()
+                if (computer.memory()[0] == 19690720) {
                     return (100 * noun + verb).toString()
                 }
             }

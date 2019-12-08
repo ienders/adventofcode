@@ -1,17 +1,22 @@
 package adventofcode
 
-import java.lang.IllegalStateException
-
 class IntcodeComputer(
     private val program: MutableList<Int>,
-    private val inputVal: Int = 0,
-    private var outputVal: String? = null,
-    private var pos: Int = 0
+    val inputs: MutableList<Int> = mutableListOf(),
+    val output: MutableList<Int> = mutableListOf(),
+    private var pos: Int = 0,
+    var state: State = State.Pending
 ) {
 
+    enum class State {
+        Pending,
+        Halted,
+        Complete
+    }
+
     private enum class ParamMode {
-        POSITION,
-        IMMEDIATE
+        Position,
+        Immediate
     }
 
     private class ParamModes(codes: String) {
@@ -40,8 +45,8 @@ class IntcodeComputer(
 
         protected fun getWithMode(offset: Int): Int =
             when (paramModes.mode(offset)) {
-                ParamMode.POSITION -> getRef(offset)
-                ParamMode.IMMEDIATE -> get(offset)
+                ParamMode.Position -> getRef(offset)
+                ParamMode.Immediate -> get(offset)
             }
 
         protected fun setRef(offset: Int, value: Int) {
@@ -89,7 +94,12 @@ class IntcodeComputer(
     ) : Operation(computer, paramModes) {
         override val inputSize = 1
         override fun execute() {
-            setRef(1, computer.inputVal)
+            if (computer.inputs.isEmpty()) {
+                computer.state = State.Halted
+            } else {
+                setRef(1, computer.inputs.removeAt(0))
+                computer.state = State.Pending
+            }
         }
     }
 
@@ -99,7 +109,7 @@ class IntcodeComputer(
     ) : Operation(computer, paramModes) {
         override val inputSize = 1
         override fun execute() {
-            computer.outputVal = (computer.outputVal ?: "") + getWithMode(1).toString()
+            computer.output.add(getWithMode(1))
         }
     }
 
@@ -145,7 +155,7 @@ class IntcodeComputer(
         }
     }
 
-    fun execute(): Int {
+    fun execute() {
         while (true) {
             val paddedCode = program[pos].toString().padStart(5, '0')
             val paramModes = ParamModes(paddedCode.take(3))
@@ -161,10 +171,18 @@ class IntcodeComputer(
                 "99" -> TerminalOperation(this, paramModes)
                 else -> throw IllegalStateException("Invalid intcode")
             }
-            if (operation.terminal) return outputVal?.toInt() ?: program[0]
+            if (operation.terminal) {
+                state = State.Complete
+                return
+            }
             operation.execute()
+            if (state == State.Halted) {
+                return
+            }
             operation.jump()
         }
     }
+
+    fun memory(): List<Int> = program.toList()
 
 }
