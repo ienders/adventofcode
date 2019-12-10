@@ -15,8 +15,8 @@ abstract class Solution(day: Int) {
     protected val inputAsString: String
         get() = inputLines.first()
 
-    protected val intcodeInput: MutableList<Int>
-        get() = inputAsString.split(",").map(String::toInt).toMutableList()
+    protected val intcodeInput: MutableList<Long>
+        get() = inputAsString.split(",").map(String::toLong).toMutableList()
 
     abstract fun part1(): String
     abstract fun part2(): String

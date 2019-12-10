@@ -4,12 +4,12 @@ import java.lang.Integer.max
 
 class Day7Solution : Solution(7) {
 
-    private class Amplifier(program: MutableList<Int>, phaseSignal: Int) {
+    private class Amplifier(program: MutableList<Long>, phaseSignal: Int) {
 
         private val computer: IntcodeComputer =
-            IntcodeComputer(program, inputs = mutableListOf(phaseSignal))
+            IntcodeComputer(program, inputs = mutableListOf(phaseSignal.toLong()))
 
-        fun run(inputSignal: Int): Int? {
+        fun run(inputSignal: Long): Long? {
             computer.inputs.add(inputSignal)
             computer.execute()
             return computer.output.removeAt(0)
@@ -20,10 +20,10 @@ class Day7Solution : Solution(7) {
 
     }
 
-    private fun runAmplifiers(phaseSignals: Array<Int>): Int {
+    private fun runAmplifiers(phaseSignals: Array<Int>): Long {
         val amps = phaseSignals.map { Amplifier(intcodeInput, it) }
         var i = 0
-        var input: Int? = 0
+        var input: Long? = 0L
         while (true) {
             if (input != null) {
                 input = amps[i].run(input)
@@ -39,15 +39,15 @@ class Day7Solution : Solution(7) {
         this[b] = tmp
     }
 
-    private fun Array<Int>.forEachPermuteMax(runner: (Array<Int>) -> Int): Int {
+    private fun Array<Int>.forEachPermuteMax(runner: (Array<Int>) -> Long): Int {
         val n = size
         val indexes = Array(n) { 0 }
-        var max = runner(this)
+        var max = runner(this).toInt()
         var i = 0
         while (i < n) {
             if (indexes[i] < i) {
                 swap(if (i % 2 == 0) 0 else indexes[i], i)
-                max = max(runner(this), max)
+                max = max(runner(this).toInt(), max)
                 indexes[i]++
                 i = 0
             } else {

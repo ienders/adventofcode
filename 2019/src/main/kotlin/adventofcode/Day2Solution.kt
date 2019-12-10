@@ -113,8 +113,8 @@ class Day2Solution : Solution(2) {
 
     private fun computer(noun: Int, verb: Int): IntcodeComputer =
         IntcodeComputer(intcodeInput.also {
-            it[1] = noun
-            it[2] = verb
+            it[1] = noun.toLong()
+            it[2] = verb.toLong()
         })
 
     override fun part1(): String =
@@ -128,7 +128,7 @@ class Day2Solution : Solution(2) {
             for (verb in 0..99) {
                 val computer = computer(noun, verb)
                 computer.execute()
-                if (computer.memory()[0] == 19690720) {
+                if (computer.memory()[0] == 19690720L) {
                     return (100 * noun + verb).toString()
                 }
             }

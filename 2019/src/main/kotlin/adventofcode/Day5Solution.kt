@@ -3,7 +3,7 @@ package adventofcode
 class Day5Solution : Solution(5) {
 
     private fun computer(input: Int): IntcodeComputer =
-        IntcodeComputer(intcodeInput, inputs = mutableListOf(input))
+        IntcodeComputer(intcodeInput, inputs = mutableListOf(input.toLong()))
 
     override fun part1(): String =
         computer(1).let {
