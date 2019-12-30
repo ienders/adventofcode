@@ -9,7 +9,6 @@ class Day9Solution : Solution(9) {
         }
 
     override fun part1() = execute(1)
-
     override fun part2() = execute(2)
 
 }
