@@ -12,7 +12,8 @@ val solutions = listOf(
     Day9Solution::class,
     Day10Solution::class,
     Day11Solution::class,
-    Day12Solution::class
+    Day12Solution::class,
+    Day13Solution::class
 )
 
 fun main(args : Array<String>) {

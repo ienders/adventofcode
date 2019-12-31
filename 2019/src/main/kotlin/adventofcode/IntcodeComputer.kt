@@ -217,6 +217,10 @@ class IntcodeComputer(
         }
     }
 
+    fun hackMemory(pos: Int, value: Long) {
+        memory[pos] = value
+    }
+
     fun memory(): List<Long> = memory.toList()
 
 }
