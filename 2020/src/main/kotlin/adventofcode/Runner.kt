@@ -7,7 +7,7 @@ val solutions = listOf(
 fun main(args : Array<String>) {
     println()
     println("==============================")
-    println("Welcome to Advent of Code 2012")
+    println("Welcome to Advent of Code 2020")
     println("==============================")
     println()
     val day = args.firstOrNull()?.toInt() ?: return println("Provide day.")
