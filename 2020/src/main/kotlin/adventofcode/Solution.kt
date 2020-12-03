@@ -15,8 +15,10 @@ abstract class Solution(day: Int) {
     protected val inputAsString: String
         get() = inputLines.first()
 
-    protected val intcodeInput: MutableList<Long>
-        get() = inputAsString.split(",").map(String::toLong).toMutableList()
+    protected val inputAsGrid: Array<Array<Boolean>>
+        get() = inputLines.map {
+            it.map { position -> position == '#' }.toTypedArray()
+        }.toTypedArray()
 
     abstract fun part1(): String
     abstract fun part2(): String
