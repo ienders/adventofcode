@@ -69,7 +69,7 @@ What is the ID of your seat?
  */
 class Day5Solution : Solution(5) {
 
-    private val seatIDs = inputLines.map { seatID(it) }
+    private val seatIDs = inputLines.map { seatID(it) }.toSet()
     private val minSeatID = seatIDs.minOrNull() ?: 0
     private val maxSeatID = seatIDs.maxOrNull() ?: 0
 
