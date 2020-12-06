@@ -132,7 +132,7 @@ Continue to treat cid as optional. In your batch file, how many passports are va
  */
 class Day4Solution : Solution(4) {
 
-    private class Passport {
+    private class Passport : InputGroup {
 
         companion object {
             private const val BIRTH_YEAR = "byr"
@@ -162,7 +162,7 @@ class Day4Solution : Solution(4) {
 
         val fields = mutableMapOf<String, String>()
 
-        fun addSpec(spec: String) {
+        override fun addItem(spec: String) {
             spec.split(" ").forEach { field ->
                 field.split(":").let {
                     fields[it[0]] = it[1]
@@ -217,20 +217,7 @@ class Day4Solution : Solution(4) {
 
     }
 
-    private val passports = mutableListOf<Passport>()
-
-    init {
-        var passport = Passport()
-        passports.add(passport)
-        inputLines.forEach {
-            if (it.isBlank()) {
-                passport = Passport()
-                passports.add(passport)
-            } else {
-                passport.addSpec(it)
-            }
-        }
-    }
+    private val passports = inputAsGroups<Passport>()
 
     override fun part1() = passports
         .count { it.allRequiredFieldsPresent }

@@ -20,6 +20,21 @@ abstract class Solution(day: Int) {
             it.map { position -> position == '#' }.toTypedArray()
         }.toTypedArray()
 
+    protected inline fun <reified K : InputGroup> inputAsGroups(): List<K> {
+        val groups = mutableListOf<K>()
+        var group = K::class.java.constructors.first().newInstance() as K
+        groups.add(group)
+        inputLines.forEach {
+            if (it.isBlank()) {
+                group = K::class.java.constructors.first().newInstance() as K
+                groups.add(group)
+            } else {
+                group.addItem(it)
+            }
+        }
+        return groups
+    }
+
     abstract fun part1(): String
     abstract fun part2(): String
 
