@@ -112,35 +112,32 @@ class Day7Solution : Solution(7) {
         val entryBags = mutableSetOf<String>()
         val currentBags = mutableListOf<String>()
         var current: String? = label
+
         while (current != null) {
             directBagHolders[current]?.forEach {
                 if (!entryBags.contains(it)) {
                     currentBags.add(it)
                 }
             }
-            val next = currentBags.removeFirstOrNull()?.also {
+            current = currentBags.removeFirstOrNull()?.also {
                 entryBags.add(it)
             }
-            current = next
         }
+
         return entryBags.size
     }
 
+    private fun bagMultiples(label: String, multiple: Int = 1): List<Pair<String, Int>> =
+        bags[label]!!.map { (subLabel, count) -> Pair(subLabel, multiple * count) }
+
     private fun bagsInside(label: String): Int {
         var total = 0
-
-        val queue = bags[label]!!
-            .map { (subLabel, count) -> Pair(subLabel, count) }
-            .toMutableList()
+        val queue = bagMultiples(label).toMutableList()
 
         do {
             val (subLabel, count) = queue.removeFirst()
             total += count
-
-            queue.addAll(
-                bags[subLabel]!!
-                    .map { (next, directCount) -> Pair(next, directCount * count) }
-            )
+            queue.addAll(bagMultiples(subLabel, count))
         } while (queue.isNotEmpty())
 
         return total
