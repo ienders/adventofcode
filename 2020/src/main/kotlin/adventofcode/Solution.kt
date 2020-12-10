@@ -12,6 +12,9 @@ abstract class Solution(day: Int) {
     protected val inputLinesAsInts: List<Int>
         get() = inputLines.map(String::toInt)
 
+    protected val inputLinesAsLongs: List<Long>
+        get() = inputLines.map(String::toLong)
+
     protected val inputAsString: String
         get() = inputLines.first()
 
