@@ -86,9 +86,8 @@ class Day11Solution : Solution(11) {
             do {
                 currX += dir.first
                 currY += dir.second
-                val value = layout.getOrNull(currX)?.getOrNull(currY)
-                if (value != null) {
-                    return value
+                layout.getOrNull(currX)?.getOrNull(currY).let {
+                    if (it != null) return it
                 }
             } while (currX in 0..maxX && currY in 0..maxY)
             return false
