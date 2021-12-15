@@ -11,7 +11,7 @@
         <AssemblyName>AdventOfCode</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <LangVersion>8</LangVersion>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,6 +43,7 @@
         <Compile Include="Day2Solution.cs" />
         <Compile Include="Day3Solution.cs" />
         <Compile Include="Day4Solution.cs" />
+        <Compile Include="Day5Solution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Solution.cs" />
@@ -64,6 +65,11 @@
     </ItemGroup>
     <ItemGroup>
       <None Include="Input\day4.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="Input\day5.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
