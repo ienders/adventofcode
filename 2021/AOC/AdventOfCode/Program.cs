@@ -19,6 +19,7 @@ namespace AdventOfCode {
             Solution solution = short.Parse(day) switch {
                 1 => new Day1Solution(),
                 2 => new Day2Solution(),
+                3 => new Day3Solution(),
                 _ => throw new ArgumentOutOfRangeException()
             };
 

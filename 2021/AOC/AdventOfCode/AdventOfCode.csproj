@@ -41,6 +41,7 @@
     <ItemGroup>
         <Compile Include="Day1Solution.cs" />
         <Compile Include="Day2Solution.cs" />
+        <Compile Include="Day3Solution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Solution.cs" />
@@ -52,6 +53,11 @@
     </ItemGroup>
     <ItemGroup>
       <None Include="Input\day2.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="Input\day3.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
