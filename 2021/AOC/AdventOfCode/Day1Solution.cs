@@ -1,36 +1,36 @@
+using System;
 using System.Linq;
 
 namespace AdventOfCode {
     public class Day1Solution : Solution {
         
-        private readonly int[] input;
+        private readonly int[] _input;
 
         public Day1Solution() : base(1) {
-            input = InputLinesAsInts();
+            _input = InputLinesAsInts();
+        }
+        
+        private int SegmentDepth(int offset, int sliceSize) {
+            return new ArraySegment<int>(_input, offset, sliceSize).Sum();
+        }
+
+        private int CountSegmentDepthIncreases(int sliceSize) {
+            var segmentDepth = SegmentDepth(0, sliceSize);
+            var count = 0;
+            for (var i = 1; i < _input.Length - sliceSize + 1; i++) {
+                var next = SegmentDepth(i, sliceSize);
+                if (next > segmentDepth) count++;
+                segmentDepth = next;
+            }
+            return count;
         }
 
         public override string Part1() {
-            var depth = input[0];
-            var count = 0;
-
-            for (int i = 1; i < input.Length; i++) {
-                if (input[i] > depth) count++;
-                depth = input[i];
-            }
-
-            return count.ToString();
+            return CountSegmentDepthIncreases(1).ToString();
         }
 
         public override string Part2() {
-            var depth = input[0] + input[1] + input[2];
-            var count = 0;
-            for (int i = 1; i < input.Length - 2; i++) {
-                var next = input[i] + input[i + 1] + input[i + 2];
-                if (next > depth) count++;
-                depth = next;
-            }
-
-            return count.ToString();
+            return CountSegmentDepthIncreases(3).ToString();
         }
     }
 }
