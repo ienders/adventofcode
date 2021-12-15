@@ -14,6 +14,14 @@ namespace AdventOfCode {
             return File.ReadLines(filepath).ToArray();
         }
 
+        protected int[] InputFirstLineAsIntArray() {
+            return InputLines()
+                .First()
+                .Split(',')
+                .Select(int.Parse)
+                .ToArray();
+        }
+
         protected int[] InputLinesAsInts() {
             return InputLines().Select(int.Parse).ToArray();
         }

@@ -8,10 +8,7 @@ namespace AdventOfCode {
         }
 
         private Dictionary<int, long> LoadFish() {
-            var fish = InputLines()
-                .First()
-                .Split(',')
-                .Select(int.Parse)
+            var fish = InputFirstLineAsIntArray()
                 .GroupBy(age => age)
                 .ToDictionary(g => g.Key, g => (long) g.Count());
 
