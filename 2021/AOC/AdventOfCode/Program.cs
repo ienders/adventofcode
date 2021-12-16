@@ -25,6 +25,7 @@ namespace AdventOfCode {
                 6 => new Day6Solution(),
                 7 => new Day7Solution(),
                 8 => new Day8Solution(),
+                9 => new Day9Solution(),
                 _ => throw new ArgumentOutOfRangeException()
             };
 

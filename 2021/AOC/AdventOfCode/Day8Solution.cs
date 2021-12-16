@@ -19,12 +19,10 @@ namespace AdventOfCode {
             return digit.Intersect(comparison).Count();
         }
         
-        private int Decode(string[] input) {
+        private static int Decode(string[] input) {
             var hashed = input.Select(d => d.ToCharArray().ToHashSet()).ToArray();
-            var digits = hashed.Take(10).ToArray();
-
-            var one = digits.First(d => d.Count == 2);
-            var four = digits.First(d => d.Count == 4);
+            var one = hashed.First(d => d.Count == 2);
+            var four = hashed.First(d => d.Count == 4);
 
             var decoded = hashed.Skip(10).Take(4).Select(digit =>
                 digit.Count switch {
