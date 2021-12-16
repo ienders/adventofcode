@@ -51,7 +51,7 @@ namespace AdventOfCode {
         }
 
         public override string Part2() {
-            return CountOverlappingPoints((_, _) => false).ToString();
+            return CountOverlappingPoints((xStep, yStep) => false).ToString();
         }
     }
 }
