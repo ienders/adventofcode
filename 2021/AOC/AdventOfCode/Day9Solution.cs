@@ -11,18 +11,9 @@ namespace AdventOfCode {
         private readonly int _maxY;
         
         public Day9Solution() : base(9) {
-            var input = InputLines();
-            _heightMap = new int[input.Length, input[0].Length];
+            _heightMap = InputAsIntGrid();
             _maxX = _heightMap.GetLength(0) - 1;
             _maxY = _heightMap.GetLength(1) - 1;
-
-            for (var x = 0; x <= _maxX; x++) {
-                var row = input[x].ToCharArray().Select(c => c - '0').ToArray();
-                for (var y = 0; y <= _maxY; y++) {
-                    _heightMap[x, y] = row[y];
-                }
-            }
-
             _lowPoints = new List<(int, int)>();
             for (var x = 0; x <= _maxX; x++)
                 for (var y = 0; y <= _maxY; y++)

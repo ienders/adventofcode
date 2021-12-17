@@ -22,6 +22,20 @@ namespace AdventOfCode {
                 .ToArray();
         }
 
+        protected int[,] InputAsIntGrid() {
+            var input = InputLines();
+            var sizeX = input.Length;
+            var sizeY = input[0].Length;
+            var grid = new int[sizeX, sizeY];
+            for (var x = 0; x < sizeX; x++) {
+                var row = input[x].ToCharArray().Select(c => c - '0').ToArray();
+                for (var y = 0; y < sizeY; y++) {
+                    grid[x, y] = row[y];
+                }
+            }
+            return grid;
+        }
+
         protected int[] InputLinesAsInts() {
             return InputLines().Select(int.Parse).ToArray();
         }
