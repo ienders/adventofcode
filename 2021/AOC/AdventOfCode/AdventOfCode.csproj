@@ -39,6 +39,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Day10Solution.cs" />
         <Compile Include="Day1Solution.cs" />
         <Compile Include="Day2Solution.cs" />
         <Compile Include="Day3Solution.cs" />
@@ -94,6 +95,11 @@
     </ItemGroup>
     <ItemGroup>
       <None Include="Input\day9.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="Input\day10.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
