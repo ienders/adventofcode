@@ -42,6 +42,7 @@
         <Compile Include="Day10Solution.cs" />
         <Compile Include="Day11Solution.cs" />
         <Compile Include="Day12Solution.cs" />
+        <Compile Include="Day13Solution.cs" />
         <Compile Include="Day1Solution.cs" />
         <Compile Include="Day2Solution.cs" />
         <Compile Include="Day3Solution.cs" />
@@ -112,6 +113,11 @@
     </ItemGroup>
     <ItemGroup>
       <None Include="Input\day12.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="Input\day13.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
