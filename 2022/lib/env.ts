@@ -8,9 +8,7 @@ dotenv.config()
 
 const envFilePath = path.resolve(path.join(__dirname, '../../'), ".env")
 const readEnvVars = (): string[] => {
-  if (!fs.existsSync(envFilePath)) {
-    return []
-  }
+  if (!fs.existsSync(envFilePath)) return []
   return fs.readFileSync(envFilePath, "utf-8").split(os.EOL)
 }
 
