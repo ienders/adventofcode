@@ -21,3 +21,6 @@ export const getInput = async (session: string, day: number): Promise<string[]> 
     })
   )
 }
+
+export const getInputAsInts = async (session: string, day: number): Promise<number[]> =>
+  (await getInput(session, day)).map(val => parseInt(val))
