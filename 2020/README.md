@@ -1,6 +1,6 @@
-## Advent of Code: 2019 Solutions
+## Advent of Code: 2020 Solutions
 
-Kotlin solutions for 2019.
+Kotlin solutions for 2020.
 
 ### Running the Solutions
 

@@ -85,3 +85,21 @@ Just having some fun helping to teach some folks how to code and think through p
 21. [Fractal Art](2017/21)
 
 ## [2018](2018)
+
+Kotlin (Only up to Day 3)
+
+## [2019](2019)
+
+Kotlin (Up to Day 14)
+
+## [2020](2020)
+
+Kotlin (A smattering of days)
+
+## [2021](2021)
+
+C# (Up to Day 13)
+
+## [2022](2022)
+
+Typescript
