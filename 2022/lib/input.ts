@@ -15,7 +15,7 @@ export const getInput = async (session: string, day: number): Promise<string[]> 
     https.get(options, resp => {
       let data = ''
       resp.on('data', chunk => data += chunk)
-      resp.on('end', () => resolve(data.split("\n")))
+      resp.on('end', () => resolve(data.trim().split("\n")))
     }).on("error", err => reject("Error: " + err.message))
   )
 }
