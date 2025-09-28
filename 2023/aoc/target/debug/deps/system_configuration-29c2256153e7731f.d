@@ -1,9 +1,0 @@
-/Users/ianenders/Workspace/repos/adventofcode/2023/aoc/target/debug/deps/system_configuration-29c2256153e7731f.rmeta: /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/lib.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/dynamic_store.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/network_configuration.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/network_reachability.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/preferences.rs
-
-/Users/ianenders/Workspace/repos/adventofcode/2023/aoc/target/debug/deps/system_configuration-29c2256153e7731f.d: /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/lib.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/dynamic_store.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/network_configuration.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/network_reachability.rs /Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/preferences.rs
-
-/Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/lib.rs:
-/Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/dynamic_store.rs:
-/Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/network_configuration.rs:
-/Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/network_reachability.rs:
-/Users/ianenders/.cargo/registry/src/github.com-1ecc6299db9ec823/system-configuration-0.5.1/src/preferences.rs:
